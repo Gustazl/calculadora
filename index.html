@@ -82,7 +82,7 @@
               <td rowspan="2"><button class="botao" style="height: 106px;">=</button></td>
             </tr>
             <tr>
-              <td colspan="2"><button class="botao" style="width: 106px;">0</button></td>  
+              <td colspan="2"><button class="botao" style="width: 106px;" onclick="insert('0')">0</button></td>  
               <td><button class="botao">.</button></td>
             </tr>
         </table>
@@ -91,7 +91,8 @@
     <script>
         function insert(num)
         {
-document.getElementById('resultado').innerHTML = num;
+var numero = document.getElementById('resultado').innerHTML;
+document.getElementById('resultado').innerHTML = numero + num
         }
     </script>
 </body>
